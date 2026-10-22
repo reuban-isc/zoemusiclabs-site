@@ -1,0 +1,42 @@
+/* Selah's support pages: the suite's Sanctuary theme (docs/design). */
+:root {
+  --ground: #0f1417;
+  --surface: #172025;
+  --ink: #e9efee;
+  --ink-muted: #a5b3b1;
+  --accent: #4fd1bd;
+  --line: #2a363b;
+  color-scheme: dark light;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --ground: #f6f8f7;
+    --surface: #ffffff;
+    --ink: #13201d;
+    --ink-muted: #4d5d59;
+    --accent: #007a6a;
+    --line: #d6dfdc;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+.wordmark { letter-spacing: 0.32em; font-weight: 600; font-size: 15px; color: var(--accent); }
+h1 { font-size: 34px; line-height: 1.2; margin: 8px 0 4px; }
+h2 { font-size: 21px; margin: 36px 0 8px; }
+p, li { color: var(--ink); }
+.muted { color: var(--ink-muted); }
+a { color: var(--accent); }
+section.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 4px 20px 12px;
+  margin-top: 24px;
+}
+footer { margin-top: 48px; font-size: 14px; color: var(--ink-muted); }
